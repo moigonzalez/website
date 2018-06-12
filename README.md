@@ -1,6 +1,5 @@
-# Progressive Web App Awards  [![Build Status](https://travis-ci.org/RobertJGabriel/Website.svg?branch=master)](https://travis-ci.org/RobertJGabriel/Website) <span class="badge-patreon"><a href="https://www.patreon.com/robertjgabriel" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+# Progressive Web App Awards  [![Build Status](https://www.travis-ci.com/pwaawards/website.svg?branch=master)](https://www.travis-ci.com/pwaawards/website) <span class="badge-patreon"><a href="https://www.patreon.com/robertjgabriel" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 > Showcase the world of progressive Web App Awards and a panel of judges will select the best in class for different categories.
-
 
 ## Contributing/Submitting
 
