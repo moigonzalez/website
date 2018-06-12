@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Progressive Web Apps Awards - Awarding best in Class </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The first website to award website and web apps that showcase pwas.">
+
+  <!-- <link rel="stylesheet" href="screen.css"> -->
+  <style>
+    @font-face {
+      font-family: Permanent Marker;
+      font-weight: 400;
+      font-style: normal;
+      src: local('Permanent Marker'), local('PermanentMarker'), url(fonts/permanent-marker.woff2) format('woff2'), url(fonts/permanent-marker.woff) format('woff')
+    }
+
+    .page {
+      margin: auto;
+      max-width: 1024px;
+      background: #fff;
+      color: #000;
+      font: 1rem Helvetica, sans-serif
+    }
+
+    .header {
+      padding: 2rem 2rem 2.4rem;
+      background: #4B387A
+    }
+
+    .header__title {
+      margin: 0;
+      color: #fff;
+      text-align: center;
+      font: 14vw/1 Permanent Marker, sans-serif
+    }
+
+
+
+    .header__link:focus {
+      margin-left: -1rem;
+      color: #4B3A78;
+      text-decoration: none
+    }
+
+    @media (min-width:30em) {
+      .header__title {
+        font-size: 4rem
+      }
+    }
+
+    .tags {
+      padding: .8em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+    }
+
+    .tags__label {
+      margin: .2rem;
+      padding: .4rem .8rem;
+      border-radius: 2rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      cursor: pointer;
+      -webkit-transition: box-shadow .1s linear;
+      transition: box-shadow .1s linear
+    }
+
+    .tags__label:hover {
+      background: #4B3A78;
+      color: #fff
+    }
+
+    .tags__radio:focus+.tags__label,
+    .tags__radio:hover+.tags__label {
+      box-shadow: 0 0 0 .15rem #fff
+    }
+
+    .tags__radio:checked+.tags__label {
+      background: #4B3A78;
+      color: #fff
+    }
+
+    .list {
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      list-style: none
+    }
+
+    .list__item {
+      width: 100%
+    }
+
+    @media (min-width:30em) {
+      .list__item {
+        width: 50%
+      }
+    }
+
+    @media (min-width:48em) {
+      .list__item {
+        width: 33.33%
+      }
+    }
+
+    [data-tags] {
+      display: none !important
+    }
+
+    [data-filter=all] [data-tags],
+    [data-filter=business] [data-tags~=business],
+    [data-filter=demo] [data-tags~=demo],
+    [data-filter=event] [data-tags~=event],
+    [data-filter=game] [data-tags~=game],
+    [data-filter=raid] [data-tags~=raid],
+    [data-filter=other] [data-tags~=other],
+    [data-filter=reference] [data-tags~=reference],
+    [data-filter=shopping] [data-tags~=shopping],
+    [data-filter=social] [data-tags~=social],
+    [data-filter=tool] [data-tags~=tool] {
+      display: block !important
+    }
+
+    .app {
+      position: relative;
+      display: block;
+      border-bottom: 2.5rem solid;
+      text-decoration: none
+    }
+
+    .app__wrapper {
+      padding-top: 62.5%
+    }
+
+    .app__title {
+      position: absolute;
+      right: 0;
+      bottom: -2.5rem;
+      left: 0;
+      overflow: hidden;
+      margin: 0;
+      padding-top: .55rem;
+      height: 2rem;
+      background: rgba(0, 0, 0, .5);
+      color: #fff;
+      text-align: center;
+      font: 1.4rem/1 Permanent Marker, sans-serif
+    }
+
+    .app:focus,
+    .app:hover {
+      outline: none;
+      box-shadow: 0 0 0 .3rem #4B3A78 inset
+    }
+
+    .app:focus .app__title,
+    .app:hover .app__title {
+      height: 2rem;
+      background: #4B3A78
+    }
+
+    .suggest {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 2.5rem;
+      background: #2d2d2d;
+      text-decoration: none
+    }
+
+    .suggest::before {
+      margin: auto;
+      color: #fff;
+      font: 10rem/1 Permanent Marker, sans-serif;
+      content: '+'
+    }
+
+    .suggest::after {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      border-radius: .8rem;
+      border: .15rem dashed #fff;
+      content: ''
+    }
+
+    .suggest:focus,
+    .suggest:hover {
+      outline: none;
+      background: #4B3A78
+    }
+
+    .footer {
+      padding: 2rem;
+      background: #fff
+    }
+
+    .footer__text {
+      margin: 0;
+      text-align: center;
+      font: 2rem/1 Permanent Marker, sans-serif
+    }
+
+    .footer__link {
+      color: #4B3A78;
+      text-decoration: none
+    }
+
+    .hidden {
+      position: absolute;
+      top: 0;
+      left: 0;
+      clip: rect(0 0 0 0);
+      white-space: nowrap
+    }
+
+  </style>
+  <link rel="manifest" href="pwa.webmanifest">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="228x228" href="images/icon-228x228.png">
+  <link rel="apple-touch-icon" type="image/png" href="images/icon-228x228.png">
+  <link rel="canonical" href="https://pwaawards.com/">
+
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <h1 class="header__title">
+      Progressive Web App Awards
+    </h1>
+  </header>
+
+
+  <nav class="tags">
+
+    <h2 class="tags__title hidden">
+      Tags
+    </h2>
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="all" checked id="tags-all">
+    <label class="tags__label" for="tags-all">
+      all
+    </label>
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="business" id="tags-business">
+    <label class="tags__label" for="tags-business">
+      business
+    </label>
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="demo" id="tags-demo">
+    <label class="tags__label" for="tags-demo">
+      demo
+    </label>
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="event" id="tags-event">
+    <label class="tags__label" for="tags-event">
+      event
+    </label>
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="game" id="tags-game">
+    <label class="tags__label" for="tags-game">
+      game
+    </label>
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="raid" id="tags-raid">
+    <label class="tags__label" for="tags-raid">
+      raid
+    </label>
+
+
+
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="social" id="tags-social">
+    <label class="tags__label" for="tags-social">
+      social
+    </label>
+
+
+
+    <input class="tags__radio hidden js-tag" type="radio" name="tag" value="other" id="tags-other">
+    <label class="tags__label" for="tags-other">
+      other
+    </label>
+
+  </nav>
+
+  <main class="list js-list" data-filter="all">
+
+    <a class="list__item app js-app" href="https://github.com/RobertJGabriel/Twitch-bot" data-app="heeeey-bot" data-tags="tool demo">
+      <style>
+        [data-app='heeeey-bot'] {
+          color: #1194f6;
+          background: currentColor url(apps/heeeey-bot.svg) 50% 50% / 46% auto no-repeat;
+        }
+
+      </style>
+      <div class="app__wrapper">
+        <h2 class="app__title">
+          Raid Bot!!!
+        </h2>
+      </div>
+    </a>
+
+    <a class="list__item suggest js-suggest" href="https://github.com/robertjgabriel/pwaawards.com" title="Suggest an app">
+      <span class="hidden">Suggest an app</span>
+    </a>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">
+      Made by the
+      <a class="footer__link" href="https://github.com/robertjgabriel/pwaawards.com/graphs/contributors">
+        pwaawards.com contributors
+      </a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
