@@ -1,7 +1,14 @@
 /* Footer */
 
 .footer {
-	padding: 2rem;
+
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	position: relative;
+	background-color: #efefef;
+	text-align: center;
 	background: #383838;
 	}
 	.footer__text {

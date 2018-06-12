@@ -1,24 +1,13 @@
 'use strict';
 
 const PREFIX = 'pwaawards.com';
-const HASH = 'd76b24a8'; // Computed at build time.
+const HASH = %HASH%; // Computed at build time.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(OFFLINE_CACHE).then(function(cache) {
-			return cache.addAll([
-				'/',
-				'/favicon.ico',
-				'/screen.css',
-				'/script.js',
-				'/fonts/permanent-marker.woff',
-				'/fonts/permanent-marker.woff2',
-				'/images/111.png',
-				'/images/icon-228x228.png',
-				'/images/icon.svg',
-				'/apps/heeeey-bot.svg'
-			]); // Computed at build time.
+			return cache.addAll(%CACHE_LIST%); // Computed at build time.
 		})
 	);
 });
