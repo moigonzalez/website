@@ -1,7 +1,8 @@
 /* App */
 
 .js-list {
-	height: 100vh;
+	height: 100%;
+    margin-bottom: 60px;
 }
 
 .list-inline {
