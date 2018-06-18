@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'pwaawards.com';
-const HASH = '9998cfdb'; // Computed at build time.
+const HASH = '4069691e'; // Computed at build time.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 
 self.addEventListener('install', function(event) {
@@ -17,6 +17,7 @@ self.addEventListener('install', function(event) {
 				'/images/111.png',
 				'/images/icon-228x228.png',
 				'/images/icon.svg',
+				'/apps/etch.svg',
 				'/apps/firefox.svg',
 				'/apps/flipboard.svg',
 				'/apps/flipkart.svg',
