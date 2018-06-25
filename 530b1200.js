@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'pwaawards.com';
-const HASH = '5d3b1355'; // Computed at build time.
+const HASH = '530b1200'; // Computed at build time.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 
 self.addEventListener('install', function(event) {
