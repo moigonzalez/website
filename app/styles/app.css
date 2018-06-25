@@ -33,7 +33,9 @@
 .app__wrapper {
 	padding-top: 62.5%;
 }
-
+.margin-right{
+	margin-right: 20px !important;
+}
 .app__title {
 	position: absolute;
 	right: 0;
