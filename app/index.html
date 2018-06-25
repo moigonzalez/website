@@ -9,7 +9,7 @@
   <meta name="description" content="The first website to award website and web apps that showcase pwas.">
   <link rel="stylesheet" href="screen.css">
   <link rel="manifest" href="pwa.webmanifest">
-  <meta name="theme-color" content="#317EFB"/>
+  <meta name="theme-color" content="#317EFB" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="228x228" href="images/icon-228x228.png">
   <link rel="apple-touch-icon" type="image/png" href="images/icon-228x228.png">
@@ -18,37 +18,59 @@
 
 <body>
 
-  <!-- Navigation -->
+  <div class="card-title">
+    <div class="title_wrapper">
+      <div class="alfa-title small">
+        <div class="p"></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="w"></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="a"></div>
+      </div>
 
-  <nav class="tags navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">PWA Awards</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#sponsor">Sponsor </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/pwa-awards/website/pulls">Submit</a>
-          </li>
-        </ul>
+      <div class="alfa-title big">
+        <div class=""></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="a"></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="w"></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="a"></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="r"></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="d"></div>
+      </div>
+      <div class="alfa-title big">
+        <div class="s"></div>
+      </div>
+      <div class="social text-center">
+       
+              <a class="" href="#" data-toggle="modal" data-target="#about">About</a>
+          
+        
+              <a class="" href="#" data-toggle="modal" data-target="#sponsor">Sponsor </a>
+     
+       
+              <a class="" href="#" data-toggle="modal" data-target="#contact">Contact</a>
+           
+              <a class="" href="https://github.com/pwa-awards/website/pulls">Submit</a>
+       
+          </ul>
+        </div>
       </div>
     </div>
-  </nav>
+
+  </div>
+
+
 
   <!-- Page Content -->
   <div class="container js-list" data-filter="all">
@@ -102,11 +124,11 @@
             </label>
           </li>
           <li>
-              <input class="tags__radio hidden js-tag" type="radio" name="tag" value="social" id="tags-social">
-              <label class="tags__label" for="tags-social">
-                Social
-              </label>
-            </li>
+            <input class="tags__radio hidden js-tag" type="radio" name="tag" value="social" id="tags-social">
+            <label class="tags__label" for="tags-social">
+              Social
+            </label>
+          </li>
           <li>
             <input class="tags__radio hidden js-tag" type="radio" name="tag" value="tool" id="tags-tool">
             <label class="tags__label" for="tags-tool">
@@ -119,7 +141,7 @@
 
     <div class="row text-center text-lg-left">
 
-       <div class="col-lg-3 col-md-6 col-xs-6 margin-top">
+      <div class="col-lg-3 col-md-6 col-xs-6 margin-top">
         <a class="list__item app js-app" href="https://agnelvishal.github.io/TrustingTrust" data-app="Trusting-Trust" data-tags="app">
           <div class="app__wrapper">
             <h2 class="app__title">
@@ -201,20 +223,20 @@
       </div>
 
       <div class="col-lg-3 col-md-6 col-xs-6 margin-top">
-          <a class="list__item app js-app" href="https://www.teamwork.com" data-app="teamwork" data-tags="business">
-            <div class="app__wrapper">
-              <h2 class="app__title">
-                Teamwork.com
-              </h2>
-            </div>
-            <style>
-              [data-app='teamwork'] {
-                color: #ebebeb;
-                background: currentColor url(apps/teamwork.svg) 50% 50% / auto 75% no-repeat;
-              }
-            </style>
-          </a>
-        </div>
+        <a class="list__item app js-app" href="https://www.teamwork.com" data-app="teamwork" data-tags="business">
+          <div class="app__wrapper">
+            <h2 class="app__title">
+              Teamwork.com
+            </h2>
+          </div>
+          <style>
+            [data-app='teamwork'] {
+              color: #ebebeb;
+              background: currentColor url(apps/teamwork.svg) 50% 50% / auto 75% no-repeat;
+            }
+          </style>
+        </a>
+      </div>
 
 
 
@@ -276,9 +298,10 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark footer">
+  <footer class="  footer">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; PWA Awards 2018</p>
+
     </div>
     <!-- /.container -->
   </footer>
@@ -296,7 +319,8 @@
           </button>
         </div>
         <div class="modal-body">
-            The first website to award website and web apps that showcase pwas. Feel free to create a pull request and at the end of the year the judges will award the best in class.
+          The first website to award website and web apps that showcase pwas. Feel free to create a pull request and at the end of
+          the year the judges will award the best in class.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -316,7 +340,7 @@
           </button>
         </div>
         <div class="modal-body">
-         Need to get in touch. Contact me at robert_gabriel@outlook.com
+          Need to get in touch. Contact me at robert_gabriel@outlook.com
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -336,7 +360,7 @@
           </button>
         </div>
         <div class="modal-body">
-         If your looking to sponsor this non-profit awards, you can do so by contact the following email robert_gabriel@outlook.com.
+          If your looking to sponsor this non-profit awards, you can do so by contact the following email robert_gabriel@outlook.com.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

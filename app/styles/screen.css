@@ -9,7 +9,7 @@
     margin: auto;
     max-width: 1024px;
     background: #fff;
-    color: #000;
+    color: #fff;
     font: 1rem Helvetica, sans-serif
 }
 
@@ -195,7 +195,8 @@
 
 .footer {
     padding: 2rem;
-    background: #fff
+    background: #fff;
+    color:#000;
 }
 
 .footer__text {
