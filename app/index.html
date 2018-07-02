@@ -108,14 +108,16 @@
   </section>
 
   <div class="album text-muted">
-    <div class="container">
+    <div class="container" id="app" >
 
-      <div class="row" id="app">
+      <div class="row" v-for="item in pwas">
         <div class="card">
           
           <div class="alphabets">
-            <a href="#">
-              <div class="a"></div>
+            <a v-bind:href="item.url" target="_blank">
+              <div>
+                {{item.title}}
+              </div>
             </a>
           </div>
         </div>
