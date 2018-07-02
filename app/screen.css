@@ -1,14 +1,7 @@
 /* Modules */
 
-@import '/styles/font.css';
-@import '/styles/page.css';
-@import '/styles/header.css';
-@import '/styles/tags.css';
-@import '/styles/list.css';
-@import '/styles/app.css';
-@import '/styles/suggest.css';
-@import '/styles/footer.css';
-@import '/styles/hidden.css';
+
 @import '/styles/bootstrap.css';
-@import '/styles/thumbnail-gallery.css';
+@import '/styles/app.css';
 @import '/styles/material.css';
+@import '/styles/animation.css'

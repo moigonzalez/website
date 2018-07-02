@@ -1,0 +1,67 @@
+[{
+        "app": "twitter",
+        "tags": "app social",
+        "title": "Twitter",
+        "imgsrc": "apps/twitter.svg",
+        "url": "https://light.twitter.com/#/login",
+        "theme": "#ebebeb"
+    }, {
+        "app": "starbucks",
+        "tags": "app social",
+        "title": "Starbucks",
+        "imgsrc": "apps/starbucks.svg",
+        "url": "https://app.starbucks.com/",
+        "theme": "#ebebeb"
+    },
+    {
+        "app": "telegram",
+        "tags": "app social",
+        "title": "Telegram",
+        "imgsrc": "apps/telegram-512.svg",
+        "url": "https://web.telegram.org/#/login",
+        "theme": "#ebebeb"
+    }, {
+        "app": "firefox",
+        "tags": "app social",
+        "title": "Firefox",
+        "imgsrc": "apps/firefox.svg",
+        "url": "https://platform-status.mozilla.org/",
+        "theme": "#ebebeb"
+    }, {
+        "app": "flipboard",
+        "tags": "app social",
+        "title": "Flipboard",
+        "imgsrc": "apps/flipboard.svg",
+        "url": "https://flipboard.com/",
+        "theme": "#ebebeb"
+    }, {
+        "app": "flipkart",
+        "tags": "app social",
+        "title": "Flipkart",
+        "imgsrc": "apps/flipkart.svg",
+        "url": "https://flipkart.com/",
+        "theme": "#ebebeb"
+    }, {
+        "app": "etch",
+        "tags": "app social",
+        "title": "Etch",
+        "imgsrc": "apps/etch.svg",
+        "url": "https://etch.co",
+        "theme": "#ebebeb"
+    }, {
+        "app": "hackedit",
+        "tags": "app social",
+        "title": "Hackedit",
+        "imgsrc": "apps/basic-calc.svg",
+        "url": "https://calculator.hackedit.de/",
+        "theme": "#ebebeb"
+        }, {
+            "app": "Trusting Trust",
+            "tags": "app social",
+            "title": "Trusting Trust",
+            "imgsrc": "apps/Trusting-Trust.svg",
+            "url": "https://agnelvishal.github.io/TrustingTrust/pc/index.html",
+            "theme": "#ebebeb"
+        }
+]
+

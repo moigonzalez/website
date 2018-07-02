@@ -1,24 +1,3 @@
-html {
-    font-size: 100%;
-    height: 100%;
-    width: 100%;
-    outline: none;
-}
-
-body {
-    background: #673AB7;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #373737;
-    line-height: 26px;
-    text-align: left;
-    overflow-x: hidden;
-    margin: auto;
-    width: 100%;
-    outline: none;
-}
-
 *,
 *:before,
 *:after {
@@ -114,16 +93,14 @@ body {
     width: 75%;
 }
 
-.cname_wrapper,
-.title_wrapper {
-    width: 750px;
+.cname_wrapper {
+    width: 70%;
     margin: 0 auto;
 }
 
 .card-title {
     padding: 2em;
-    background: #fff;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+    color: #fff;
 }
 
 .cname-title,
@@ -135,7 +112,6 @@ body {
 
 @media (min-width:480px) {
     .title_wrapper {
-        width: 750px;
         margin: 0 auto;
     }
     .wrapper {
@@ -151,22 +127,6 @@ body {
     }
 }
 
-@media (min-width:768px) {
-    .title_wrapper {
-        width: 750px;
-        margin: 0 auto;
-    }
-    .cname-title {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-        margin: -21px;
-    }
-    .cname_wrapper {
-        width: 690px;
-        margin: 0 auto;
-    }
-}
-
 @media (min-width:1200px) {
     .wrapper {
         margin: 0 auto;
@@ -177,11 +137,21 @@ body {
 .card {
     display: inline-block;
     width: 150px;
-    height: 150px;
-    padding: 2em;
     margin: 1em;
     background: #fff;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card> a{
+    cursor: pointer;
+}
+.card>a>img {
+    padding: 1rem;
 }
 
 .alphabets,
