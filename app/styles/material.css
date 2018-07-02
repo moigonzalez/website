@@ -100,7 +100,7 @@
     background: #fff;
    
   }
-  
+
   
   .cname-title,.alfa-title {
     -webkit-transform: scale(0.6);
@@ -134,11 +134,13 @@
   .card{
     display: inline-block;
     width: 150px;
-    height: 150px;
-    padding: 2em;
     margin: 1em;
     background: #fff;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+  }
+
+  .card > a > img{
+      padding: 1rem;
   }
   .alphabets, .alfa-title , .cname-title{
     width: 100px;
