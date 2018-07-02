@@ -1,67 +1,64 @@
-/* App */
-
-.js-list {
-	height: 100%;
-    margin-bottom: 60px;
+body {
+    min-height: 75rem;
+    /* Can be removed; just added for demo purposes */
 }
 
-.list-inline {
-	float: right;
+.navbar {
+    margin-bottom: 0;
 }
 
-.list-inline>li {
-	display: inline-block;
-	float: left;
+.margin-top{
+    margin-top: 2rem;
 }
 
-.margin-bottom {
-	margin-bottom: 30px;
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+    background-color: #fff;
 }
 
-.margin-top {
-	margin-top: 2%;
+.jumbotron p:last-child {
+    margin-bottom: 0;
 }
 
-.app {
-	position: relative;
-	display: block;
-	border-bottom: 2.5rem solid;
-	text-decoration: none;
-	height: 100%;
+.jumbotron-heading {
+    font-weight: 300;
 }
 
-.app__wrapper {
-	padding-top: 62.5%;
-}
-.margin-right{
-	margin-right: 20px !important;
-}
-.app__title {
-	position: absolute;
-	right: 0;
-	bottom: -2.5rem;
-	left: 0;
-	overflow: hidden;
-	margin: 0;
-	padding-top: 0.55rem;
-	padding-bottom: 0.55rem;
-	height: 2.5rem;
-	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
-	text-align: center;
-	font: 1.4rem/1 Permanent Marker, sans-serif;
+.jumbotron .container {
+    max-width: 50rem;
 }
 
-/* Action */
-
-.app:hover,
-.app:focus {
-	outline: none;
-	color: transparent;
+.album {
+    min-height: 50rem;
+    /* Can be removed; just added for demo purposes */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f7f7f7;
 }
 
-.app:hover .app__title,
-.app:focus .app__title {
-	height: 2.5rem;
-	background: #5ac1f2;
+.card {
+    float: left;
+    width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+.card>img {
+    margin-bottom: .75rem;
+}
+
+.card-text {
+    font-size: 85%;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
 }
