@@ -21,6 +21,13 @@
         "url": "https://web.telegram.org/#/login",
         "theme": "#ebebeb"
     }, {
+        "app": "Devmind.io",
+        "tags": "app coding development",
+        "title": "Devmind.io",
+        "imgsrc": "apps/devmind.svg",
+        "url": "https://devmind.io/",
+        "theme": "#01aaed"
+    }, {
         "app": "firefox",
         "tags": "app social",
         "title": "Firefox",
