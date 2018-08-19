@@ -3,7 +3,7 @@
         "tags": "app social",
         "title": "Twitter",
         "imgsrc": "apps/twitter.svg",
-        "url": "https://light.twitter.com/#/login",
+        "url": "https://lite.twitter.com/#/login",
         "theme": "#ebebeb"
     }, {
         "app": "starbucks",
