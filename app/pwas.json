@@ -3,7 +3,7 @@
         "tags": "app social",
         "title": "Twitter Lite",
         "imgsrc": "apps/twitter.svg",
-        "url": "https://light.twitter.com/#/login",
+        "url": "https://lite.twitter.com/#/login",
         "theme": "#2BB8E9"
     }, {
         "app": "starbucks",
@@ -20,6 +20,13 @@
         "imgsrc": "apps/telegram.svg",
         "url": "https://web.telegram.org/#/login",
         "theme": "#229CCE"
+    }, {
+        "app": "Devmind.io",
+        "tags": "app coding development",
+        "title": "Devmind.io",
+        "imgsrc": "apps/devmind.svg",
+        "url": "https://devmind.io/",
+        "theme": "#01aaed"
     }, {
         "app": "firefox",
         "tags": "app social",
