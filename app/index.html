@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>PWA Awards - Progressive Web Apps Awards. </title>
+  <title>PWA Awards - Progressive Web Apps Awards</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="PWA Awards are the Progressive Web App Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.">
@@ -25,13 +25,13 @@
       <div class="row">
         <div class="col-sm-8 py-4">
           <h4 class="text-white">About</h4>
-          <p class="text-muted">PWA Awards are the Progressive Web App Awards that recognize and promote the talent and effort of the best developers,
+          <p class="text-white">PWA Awards are the Progressive Web App Awards that recognize and promote the talent and effort of the best developers,
             designers and web agencies in the world.
           </p>
           <h4 class="text-white">Sponsoring the Awards</h4>
-          <p class="text-muted">Sponsoring will mean web developers, bloggers and other members of the community will get to know your company
+          <p class="text-white">Sponsoring will mean web developers, bloggers and other members of the community will get to know your company
             better and see that you want to support their community.</p>
-          <p class="text-muted">
+          <p class="text-white">
             You will have the opportunity to promote your brand and products to attendees and meet potential new employees, clients or
             users. There are also networking opportunities throughout the conference and during the after party.
             <a href="#" data-toggle="modal" data-target="#sponsor"> more here</a>
@@ -44,10 +44,10 @@
               <a href="#" class="text-white">Follow on Twitter</a>
             </li>
             <li>
-              <a href="#" class="text-white">Like on Facebook</a>
+              <a href="https://www.facebook.com/pwaawards/?modal=admin_todo_tour" class="text-white">Like on Facebook</a>
             </li>
             <li>
-              <a href="#" class="text-white">Email me</a>
+              <a href="mailto:robert_gabriel@outlook.com" class="text-white">Email me</a>
             </li>
           </ul>
         </div>
@@ -57,7 +57,6 @@
 
   <div class="navbar navbar-inverse bg-inverse">
     <div class="container d-flex justify-content-between">
-
       <a href="#" class="navbar-brand">PWA Awards</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -67,77 +66,17 @@
   </div>
 
 
-
-
-
-
-
-
-  <section class="jumbotron background-animation">
-    <div class="container">
-
-      <div class="card-title">
-        <div class="title_wrapper">
-          <div class="alfa-title small">
-            <div class="p"></div>
-          </div>
-          <div class="alfa-title big">
-            <div class="w"></div>
-          </div>
-          <div class="alfa-title big">
-            <div class="a"></div>
-          </div>
-          <div class="alfa-title big">
-            <div class=""></div>
-          </div>
-          <div class="alfa-title big">
-            <div class="a"></div>
-
-          </div>
-          <div class="alfa-title big">
-            <div class="w"></div>
-          </div>
-          <div class="alfa-title big">
-            <div class="a"></div>
-
-          </div>
-          <div class="alfa-title big">
-            <div class="r"></div>
-          </div>
-          <div class="alfa-title big">
-            <div class="d"></div>
-          </div>
-          <div class="alfa-title big">
-            <div class="s"></div>
-          </div>
-          <p class="lead text-center margin-top">PWA Awards are the Progressive Web App Awards that recognize and promote the talent and effort of the best developers,
-            designers and web agencies in the world.</p>
-          <p class='text-center'>
-            <a href="https://github.com/pwa-awards/website/pulls" class="btn btn-primary my-2">Submit</a>
-            <a href="#" data-toggle="modal" data-target="#sponsor" class="btn btn-secondary my-2">Sponsor</a>
-          </p>
-        </div>
-      </div>
-
-  </section>
-
   <div class="album text-muted">
     <div class="container" id="app">
-
-      <div class="row">
-        <div class="card" v-for="item in pwas">
-          <a v-bind:href="item.url" target="_blank">
-            <img v-bind:src="item.imgsrc" class="img-fluid" width="150">
+      <div class="row sites">
+        <div v-for="item in pwas">
+          <a v-bind:href="item.url"  v-bind:style="{ background: item.theme}"target="_blank">
+            <img v-bind:src="item.imgsrc" width="188">
+            <span id="title">{{item.title}}</span>
           </a>
-          <div class="card-name">
-            {{item.title}}
-          </div>
-
         </div>
       </div>
     </div>
-
-
   </div>
 
 
@@ -151,7 +90,6 @@
           </button>
         </div>
         <div class="modal-body">
-
           <b>Why Sponsor?</b>
           <p class="text-muted">Sponsoring will mean web developers, bloggers and other members of the community will get to know your company
             better and see that you want to support their community.</p>
@@ -160,13 +98,10 @@
             users. There are also networking opportunities throughout the conference and during the after party.
             <a href="#" data-toggle="modal" data-target="#sponsor"> more here</a>
           </p>
-
           <b>Contact us:</b>
           <p class="text-muted">
             You can contact at robert_gabriel@outlook.com
-
           </p>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -196,8 +131,6 @@
   <script src="js/vue.js"></script>
   <script src="js/vue-resouces.js"></script>
   <script src="js/script.js"></script>
-
-
 
 </body>
 

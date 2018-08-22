@@ -1,10 +1,10 @@
 [{
         "app": "twitter",
         "tags": "app social",
-        "title": "Twitter",
+        "title": "Twitter Lite",
         "imgsrc": "apps/twitter.svg",
         "url": "https://lite.twitter.com/#/login",
-        "theme": "#ebebeb"
+        "theme": "#2BB8E9"
     }, {
         "app": "starbucks",
         "tags": "app social",
@@ -17,9 +17,9 @@
         "app": "telegram",
         "tags": "app social",
         "title": "Telegram",
-        "imgsrc": "apps/telegram-512.svg",
+        "imgsrc": "apps/telegram.svg",
         "url": "https://web.telegram.org/#/login",
-        "theme": "#ebebeb"
+        "theme": "#229CCE"
     }, {
         "app": "Devmind.io",
         "tags": "app coding development",
@@ -33,42 +33,69 @@
         "title": "Firefox",
         "imgsrc": "apps/firefox.svg",
         "url": "https://platform-status.mozilla.org/",
-        "theme": "#ebebeb"
+        "theme": "#4688F1"
     }, {
         "app": "flipboard",
         "tags": "app social",
         "title": "Flipboard",
         "imgsrc": "apps/flipboard.svg",
         "url": "https://flipboard.com/",
-        "theme": "#ebebeb"
+        "theme": "#DD2B30"
     }, {
         "app": "flipkart",
         "tags": "app social",
         "title": "Flipkart",
         "imgsrc": "apps/flipkart.svg",
         "url": "https://flipkart.com/",
-        "theme": "#ebebeb"
+        "theme": "#177ED1"
     }, {
         "app": "etch",
         "tags": "app social",
         "title": "Etch",
         "imgsrc": "apps/etch.svg",
         "url": "https://etch.co",
-        "theme": "#ebebeb"
+        "theme": "#000"
     }, {
         "app": "hackedit",
         "tags": "app social",
         "title": "Hackedit",
         "imgsrc": "apps/basic-calc.svg",
         "url": "https://calculator.hackedit.de/",
+        "theme": "#ff4500"
+    }, {
+        "app": "Trusting Trust",
+        "tags": "app social",
+        "title": "Trusting Trust",
+        "imgsrc": "apps/Trusting-Trust.svg",
+        "url": "https://agnelvishal.github.io/TrustingTrust/pc/index.html",
+        "theme": "#ffbb00"
+    }, {
+        "app": "Opera",
+        "tags": "app social",
+        "title": "Dev Opera",
+        "imgsrc": "apps/opera.svg",
+        "url": "https://dev.opera.com/",
+        "theme": "#ffbb00"
+    }, {
+        "app": "Uber",
+        "tags": "games",
+        "title": "Uber",
+        "imgsrc": "apps/uber.svg",
+        "url": "https://m.uber.com/looking",
         "theme": "#ebebeb"
-        }, {
-            "app": "Trusting Trust",
-            "tags": "app social",
-            "title": "Trusting Trust",
-            "imgsrc": "apps/Trusting-Trust.svg",
-            "url": "https://agnelvishal.github.io/TrustingTrust/pc/index.html",
-            "theme": "#ebebeb"
-        }
+    }, {
+        "app": "Google Maps",
+        "tags": "games",
+        "title": "Google Maps",
+        "imgsrc": "apps/googlemaps.svg",
+        "url": "https://www.google.com/maps?force=pwa&source=mlpwa",
+        "theme": "#000"
+    }, {
+        "app": "Tinder",
+        "tags": "games",
+        "title": "Tinder",
+        "imgsrc": "apps/tinder.svg",
+        "url": "https://tinder.com/",
+        "theme": "#000"
+    }
 ]
-
