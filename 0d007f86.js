@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'pwaawards.com';
-const HASH = 'b6add9bc'; // Computed at build time.
+const HASH = '0d007f86'; // Computed at build time.
 const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
 
 self.addEventListener('install', function(event) {
@@ -17,16 +17,21 @@ self.addEventListener('install', function(event) {
 				'/images/111.png',
 				'/images/icon-228x228.png',
 				'/images/icon.svg',
+				'/images/logos',
 				'/apps/basic-calc.svg',
 				'/apps/devmind.svg',
 				'/apps/etch.svg',
 				'/apps/firefox.svg',
 				'/apps/flipboard.svg',
 				'/apps/flipkart.svg',
+				'/apps/googlemaps.svg',
+				'/apps/opera.svg',
 				'/apps/starbucks.svg',
-				'/apps/telegram-512.svg',
+				'/apps/telegram.svg',
+				'/apps/tinder.svg',
 				'/apps/Trusting-Trust.svg',
-				'/apps/twitter.svg'
+				'/apps/twitter.svg',
+				'/apps/uber.svg'
 			]); // Computed at build time.
 		})
 	);
