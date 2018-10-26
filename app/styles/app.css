@@ -31,7 +31,7 @@
 
     /* Can be removed; just added for demo purposes */
 
-    height: -webkit-fill-available;
+    flex-grow: 1;
     background-color: #fff;
 }
 
