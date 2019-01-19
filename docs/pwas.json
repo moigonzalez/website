@@ -97,5 +97,12 @@
         "imgsrc": "apps/tinder.svg",
         "url": "https://tinder.com/",
         "theme": "#000"
+    }, {
+        "app": "newsfeeder",
+        "tags": "news",
+        "title": "Newsfeeder",
+        "imgsrc": "apps/newsfeeder.png",
+        "url": "https://esstudio.site/newsfeeder",
+        "theme": "#f5593d"
     }
 ]
