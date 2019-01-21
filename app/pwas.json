@@ -104,5 +104,12 @@
         "imgsrc": "apps/newsfeeder.png",
         "url": "https://esstudio.site/newsfeeder",
         "theme": "#f5593d"
+    }, {
+        "app": "barcode-scanner",
+        "tags": "food",
+        "title": "Barcode Scanner",
+        "imgsrc": "apps/barcode_scanner.svg",
+        "url": "https://pwascanit.com/",
+        "theme": "#333333"
     }
 ]
